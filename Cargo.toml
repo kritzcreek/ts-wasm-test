@@ -1,0 +1,8 @@
+[package]
+name = "ts-wasm-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tree-sitter = { version = "0.23.0", features = ["wasm"] }
+wasmtime = { version = "24.0.0", default-features = false, features = ["cranelift"] }
